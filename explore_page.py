@@ -38,7 +38,7 @@ def load_data():
     #    compression="zip",
     #    low_memory=False)
     base_dir = os.path.dirname(__file__)
-    data_path = os.path.join(base_dir, "data", "small_sample_survey.csv")
+    data_path = os.path.join(base_dir, "data", "sample.csv")
 
     df = pd.read_csv(data_path)
     df = df[["Country", "EdLevel", "YearsCodePro", "Employment", "ConvertedComp"]]
